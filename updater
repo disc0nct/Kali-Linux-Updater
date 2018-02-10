@@ -1,0 +1,28 @@
+#!/bin/bash 
+echo""
+ 
+ 
+ echo -e "          \e[1;31m>>>KALI-LINUX-UPDATER<<<\e[0m         " 
+ echo""
+ echo -e "              \e[0;34mVersion : 1.0\e[0m         "
+ echo -e "              \e[0;34mCredits : M0nt4\e[0m         "
+ echo -e "              \e[0;34mEmail   : nassersillini30@gmail.com\e[0m         "
+
+ echo""                            
+
+ echo  -e "    \e[1;32mUpdating & Upgrading KALI LINUX Now !\e[0m     "  
+echo""
+apt update && apt  upgrade -y && apt dist-upgrade -y 
+
+echo -e "\e[1;31mUpdate & Upgrade Has Been Completed !\e[0m "
+
+echo -e "\e[1;31mPlease REBOOT Your Machine To take Action !\e[0m " && echo -e "\e[1;33mDo You Want To REBOOT ? (Y)Yes / (N)No\e[0m"
+
+read answer1
+if echo "$answer1" | grep -iq "^y";then
+    reboot
+else
+    echo -e " \e[0;35mThanks For Using My Tool! and Happy Hacking!\e[0m"
+fi
+
+
