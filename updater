@@ -12,7 +12,7 @@ echo""
 
  echo  -e "    \e[1;32mUpdating & Upgrading KALI LINUX Now !\e[0m     "  
 echo""
-apt update && apt  upgrade -y && apt dist-upgrade -y 
+apt update && apt  upgrade -y && apt dist-upgrade -y && apt autoremove -y
 
 echo -e "\e[1;31mUpdate & Upgrade Has Been Completed !\e[0m "
 
@@ -22,7 +22,7 @@ read answer1
 if echo "$answer1" | grep -iq "^y";then
     reboot
 else
-    echo -e " \e[0;35mThanks For Using My Tool! and Happy Hacking!\e[0m"
+    echo -e "\e[0;35mThanks For Using My Tool! and Happy Hacking!\e[0m"
 fi
 
 
